@@ -1,10 +1,11 @@
 const express = require("express");
 const morgan = require("morgan");
 const app = express();
-var cors = require('cors')
+var cors = require('cors');
+
 //settings
 app.set("json spaces", 2);
-
+app.set('port', process.env.PORT || 3000)
 app.use(morgan("dev"));
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
@@ -2474,6 +2475,6 @@ app.get("/data", (req, res) => {
   ]);
 });
 
-app.listen(3000, () => {
-  console.log(`Server on port ${3000}`);
+app.listen(app.get('port'), () => {
+  console.log(`Server on port ${app.get('port')}`);
 });
