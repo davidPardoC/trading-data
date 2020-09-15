@@ -4,7 +4,7 @@ const app = express();
 
 
 //settings
-app.set('port', 3000)
+app.set('port', 8080)
 app.set('json spaces', 2)
 
 app.use(morgan('dev'))
