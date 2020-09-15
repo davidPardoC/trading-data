@@ -4,7 +4,6 @@ const app = express();
 
 
 //settings
-app.set('port', 8080)
 app.set('json spaces', 2)
 
 app.use(morgan('dev'))
@@ -326,6 +325,6 @@ app.get('/data', (req,res)=>{
     ])
 })
 
-app.listen(app.get('port'), ()=>{
-    console.log(`Server on port ${app.get('port')}`)
+app.listen(3000, ()=>{
+    console.log(`Server on port ${3000}`)
 })
