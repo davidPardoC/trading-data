@@ -11,7 +11,10 @@ app.use(morgan('dev'))
 app.use(express.urlencoded({extended:false}))
 app.use(express.json())
 
-app.get('/', (req,res)=>{
+app.get('/', (req, res)=>{
+    res.send('OK')
+})
+app.get('/data', (req,res)=>{
     res.json([
         { x: new Date('2020-02-01T05:51:00.000Z'), open: 111.389999, high: 111.440002, low: 107.349998, close: 109.330002, volume: 53204600 },
   { x: new Date('2020-02-01T05:52:00.000Z'), open: 108.290001, high: 108.650002, low: 105.410004, close: 106.25, volume: 64285500 },
