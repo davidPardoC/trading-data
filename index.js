@@ -25,7 +25,7 @@ app.get("/data", (req, res) => {
         new Date().getDay()+13,
         new Date().getHours()-5,
         new Date().getMinutes(),
-        new Date().getSeconds()-sec
+        new Date().getSeconds()-30-sec
       ),
       open: Math.random() * (1.4 - 1)+1,
       high: Math.random() * (1.4 - 1)+1,
