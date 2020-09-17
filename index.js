@@ -24,7 +24,7 @@ app.get("/data", (req, res) => {
         new Date().getMonth(),
         new Date().getDay()+13,
         new Date().getHours()-5,
-        new Date().getMinutes(),
+        new Date().getMinutes()+2,
         new Date().getSeconds()-sec
       ),
       open: Math.random() * (1.4 - 1)+1,
