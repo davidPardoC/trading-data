@@ -27,10 +27,10 @@ app.get("/data", (req, res) => {
         new Date().getMinutes(),
         sec
       ),
-      open: Math.random() * (2 - 1),
-      high: Math.random() * (2 - 1),
-      close: Math.random() * (2 - 1),
-      low: Math.random() * (2 - 1),
+      open: Math.random() * (2 - 1)+1,
+      high: Math.random() * (2 - 1)+1,
+      close: Math.random() * (2 - 1)+1,
+      low: Math.random() * (2 - 1)+1,
     });
     sec--;
   }
