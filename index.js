@@ -22,7 +22,7 @@ app.get("/data", (req, res) => {
       x: new Date(
         new Date().getFullYear(),
         new Date().getMonth(),
-        17,
+        new Date().getDay(),
         new Date().getHours(),
         new Date().getMinutes(),
         new Date().getSeconds()-sec
