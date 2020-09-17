@@ -17,7 +17,7 @@ app.get("/", (req, res) => {
 app.get("/data", (req, res) => {
   let sec = 0;
   let data = [];
-  for (let index = 0; index <= 300; index++) {
+  for (let index = 0; index <= 120; index++) {
     data.push({
       x: new Date(
         new Date().getFullYear(),
