@@ -26,7 +26,7 @@ app.get("/data", (req, res) => {
         new Date().getHours(),
         new Date().getMinutes(),
         sec
-      ).getUTCDate(),
+      ).toISOString(),
       open: Math.random() * (2 - 1)+1,
       high: Math.random() * (2 - 1)+1,
       close: Math.random() * (2 - 1)+1,
