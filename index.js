@@ -19,7 +19,7 @@ app.get("/data", (req, res) => {
   let data = [];
   for (let index = 0; index <= 1800; index++) {
     data.push({
-      x: new Date(
+      time_stamp: new Date(
         new Date().getFullYear(),
         new Date().getMonth(),
         new Date().getDay()+13,
